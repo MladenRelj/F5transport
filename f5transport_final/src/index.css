@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/*Responesive*/
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    max-width: 100%;
+  }
+
+  .padding {
+    padding: 2.5rem;
+    font-size: xx-large;
+  }
+
+  footer {
+    margin-top: 550px !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  footer {
+    margin-top: 250px;
+  }
+  .padding {
+    padding: 2.5rem;
+    font-size: xx-large;
+  }
+  .grid {
+    display: grid;
+  }
+  .box {
+    display: inline-table;
+    width: 100%;
+    margin: auto;
+  }
+  iframe {
+    width: 390px;
+  }
+  .margin {
+    width: 80% !important;
+    margin-left: 80px !important;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  body {
+    max-width: 100%;
+  }
+  iframe {
+    width: 450px;
+    height: 450px;
+  }
+  .padding {
+    font-size: initial;
+    font-size: xx-large;
+  }
+  .grid {
+    display: grid;
+  }
+  .box {
+    margin: auto;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    max-width: 100%;
+  }
+  iframe {
+    width: 350px;
+    height: 350px;
+  }
+  .padding {
+    /* width: 200px; */
+    font-size: x-large;
+  }
+  .box {
+    display: inline-table;
+  }
+  .border {
+    border-left: 0px;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  .height {
+    height: 80px;
+    margin-top: 30px;
+    width: 300px;
+    margin: auto;
+  }
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
+  .button {
+    width: 150px;
+  }
+  .padding {
+    font-size: initial;
+    padding: 1rem;
+  }
+  .border {
+    border: none;
+  }
+  .margin {
+    width: 90% !important;
+  }
+}
